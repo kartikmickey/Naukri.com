@@ -1,0 +1,88 @@
+
+*{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#topheading{
+   /* height: 100px;  */
+   width: 100%;
+   border: 1px solid black;
+   text-align: center;
+}
+
+#container{
+    width: 100%;
+    border: 1px solid red;
+    /* height: 400px; */
+    display: flex;
+    justify-content: center;
+
+}
+#both_div_top{
+    width: 85%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+#content{
+    display: flex;
+    border: 1px solid green;
+    width: 95%;
+    align-items: center;
+}
+#filter{
+    border: 1px solid blue;
+    width: 25%;
+    height: 90%;
+}
+#listing_div_first{
+    border: 2px solid rgb(197, 218, 12);
+    width: 72%;
+    /* height: 90%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#listing_div_second{
+    border: 2px solid teal;
+    width: 97%;
+    /* height: 99%; */
+    display: flex;
+    flex-direction: column;
+}
+#append_div{
+   width: 98%;
+   border: 1px solid yellowgreen;
+   height: 100%;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   
+   justify-content:space-evenly;
+}
+#change_page{
+    width: 98%;
+    height: 100px;
+    border: 1px solid green;
+}
+.appimg{
+    width: 80%;
+    /* height: 30%; */
+}
+.appparent{
+    border: 1px solid black;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.indiv{
+    height: 25%;
+    width: 100%;
+    border: 5px solid black;
+   
+}
