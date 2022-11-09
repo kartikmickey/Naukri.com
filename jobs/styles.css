@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e3f2fd;
 }
 
 #container {
@@ -9,20 +15,21 @@
   margin: auto;
 }
 #div {
+  background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   flex: 7;
   display: flex;
   margin: auto;
   flex-direction: column;
   width: 45%;
-  height: 200px;
+  height: 270px;
   padding: 2%;
   margin-top: 1%;
 }
 #div img {
   width: 4rem;
   position: absolute;
-  margin-left: 32rem;
+  margin-left: 28rem;
   margin-top: 1.5%;
 }
 #div h3 {
@@ -41,4 +48,98 @@
   color: #536777;
   line-height: 18px;
   font-weight: 400;
+}
+#container2 {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  margin: 80px auto 30px;
+}
+.select-btn {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.select-btn .btn-text {
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+}
+.select-btn .arrow-dwn {
+  display: flex;
+  height: 21px;
+  width: 21px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 50%;
+  background: #6e93f7;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.select-btn.open .arrow-dwn {
+  transform: rotate(-180deg);
+}
+
+#list-items {
+  position: relative;
+  margin-top: 15px;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.select-btn.open ~ #list-items {
+  display: block;
+}
+
+#list-items .items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0 15px;
+  border-radius: 8px;
+}
+#list-items .items:hover {
+  background-color: #e7edfe;
+}
+.items .item-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+.items .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  width: 16px;
+  border-radius: 4px;
+  margin-right: 12px;
+  border: 1.5px solid #c0c0c0;
+  transition: all 0.3s ease-in-out;
+}
+.items.checked .checkbox {
+  background-color: #4070f4;
+  border-color: #4070f4;
+}
+.checkbox .fa-check {
+  color: #fff;
+  font-size: 11px;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+.items.checked .fa-check {
+  transform: scale(1);
 }
