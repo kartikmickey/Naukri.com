@@ -5,7 +5,7 @@ const parent_div = document.getElementById("container");
 let data = [
   {
     title: "Salesforce Developer",
-    company: "Accenture",
+    company: "Accenture : 4 Reviews",
     reviews: "4 Reviews",
     image: "https://www.naukri.com/hotjobs/images/v3/Accen_nov20.gif",
     experience: "2-5 Yrs",
@@ -19,7 +19,7 @@ let data = [
   },
   {
     title: "Full Stack Developer",
-    company: "IBM",
+    company: "IBM ",
     reviews: "122 Reviews",
     image: "https://img.naukimg.com/logo_images/v2/mobile/16987.gif",
     experience: "2-5 Yrs",
@@ -60,7 +60,7 @@ let data = [
     date: "16 nov 2022",
   },
   {
-    title: "HCL Hiring Software Engineer(Java),Bangalore,Chennai,Noida",
+    title: "HCL Hiring Software Engineer(Java),Bangalore,Chennai",
     company: "Mphasis",
     reviews: "4 Reviews",
     image: "https://www.naukri.com/hotjobs/images/v3/mphasis_apr19.gif",
@@ -103,7 +103,7 @@ let data = [
   },
   {
     title: "Senior Software Developer",
-    company: "Mphasis",
+    company: "SAP",
     reviews: "4 Reviews",
     image: "https://www.naukri.com/hotjobs/images/v3/sapind_nov13.gif",
     experience: "2-5 Yrs",
@@ -116,7 +116,7 @@ let data = [
     date: "10 oct 2022",
   },
   {
-    title: "HCL Hiring Sr Software Develooer(Java)Bangalore, Chennai, Noida",
+    title: "HCL Hiring Sr Software Develooer(Java)Bangalore",
     company: "Flipkart",
     reviews: "4 Reviews",
     image: "https://img.naukimg.com/logo_images/groups/v1/533532.gif",
@@ -147,6 +147,7 @@ let data = [
 // console.log(data);
 
 window.onload = () => {
+  parent_div.innerHTML = null;
   getData(data, parent_div);
 };
 const getData = (data, parent_div) => {
@@ -155,22 +156,76 @@ const getData = (data, parent_div) => {
 
 //---------------Sorting datewise-------------------//
 
-const select_tag = document.getElementById("list");
-select_tag.addEventListener("change", (data) => {
-  let selectedValue = document.getElementById("list").value;
-  customSort(data);
-});
+// const select_tag = document.getElementById("list");
+// select_tag.addEventListener("change", (el) => {
+//   let selectedValue = document.getElementById("list").value;
+//   if (selectedValue == "relevance") {
+//     appendData(data, parent_div);
+//   } else if (selectedValue == "date") {
+//     console.log("invoked");
+//     appendData(sortedData, parent_div);
+//   }
+// });
 
 const customSort = (a, b) => {
-  console.log(a.title);
-  // const dateA = new Date(a.date);
-  // const dateB = new Date(b.date);
-  // if (dateA < dateB) {
-  //   return 1;
-  // } else if (dateA > dateB) {
-  //   return -1;
-  // }
-  // return 0;
+  // console.log(a);
+  const dateA = new Date(a.date);
+  const dateB = new Date(b.date);
+  if (dateA < dateB) {
+    return 1;
+  } else if (dateA > dateB) {
+    return -1;
+  }
+  return 0;
 };
+let sortedData = data.sort(customSort);
+console.log(sortedData);
 
-// console.log(data.sort(customSort(data)));
+//------------------------------------------------//
+const max = data.filter(function (el) {
+  return el.company == "SAP";
+});
+
+// appendData(max);
+
+//--------------------------------------------------//
+// const selectBox = document.getElementById("selectBox");
+// selectBox.onclick = () => {
+//   showCheckboxes();
+// };
+// const expanded = false;
+// function showCheckboxes() {
+//   console.log("Invoked");
+//   let checkboxes = document.getElementById("checkboxes");
+//   if (!expanded) {
+//     checkboxes.style.display = "block";
+//     expanded = true;
+//   } else {
+//     checkboxes.style.display = "none";
+//     expanded = false;
+//   }
+// }
+
+//---------------------------------------------------------------//
+const selectBtn = document.querySelector(".select-btn");
+const items = document.querySelectorAll(".items");
+console.log(selectBtn, items);
+
+selectBtn.addEventListener("click", () => {
+  selectBtn.classList.toggle("open");
+});
+
+items.forEach((items) => {
+  items.addEventListener("click", () => {
+    items.classList.toggle("checked");
+
+    let checked = document.querySelectorAll(".checked");
+    let btnText = document.querySelector(".btn-text");
+    console.log(checked);
+    if (checked.innerText == "Pune") {
+      console.log("You Win");
+    } else {
+      console.log("Try Again");
+    }
+  });
+});

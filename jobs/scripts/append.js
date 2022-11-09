@@ -1,4 +1,4 @@
-const appendData = (data, parent_div, div1, div2) => {
+const appendData = (data, parent_div) => {
   parent_div.innerHTML = null;
   data.forEach((data) => {
     let div = document.createElement("div");
