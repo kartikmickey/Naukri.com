@@ -20,6 +20,9 @@ body {
   max-width: 320px;
   width: 350px;
   height: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   /* margin: 80px auto 30px; */
 }
 #container1 {
@@ -179,9 +182,14 @@ body {
 }
 #container3 {
   /* border: 2px solid purple; */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 350px;
   height: fit-content;
   background-color: #fff;
+  display: flex;
+  box-sizing: border-box;
 }
 #div > img {
   width: 4rem;
