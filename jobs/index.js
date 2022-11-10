@@ -1,3 +1,8 @@
+let divv = document.querySelector("#container3");
+window.onscroll = function () {
+  divv.classList.add("sticky");
+};
+
 const selectBtn = document.querySelector(".select-btn");
 const items = document.querySelectorAll(".items");
 // console.log(selectBtn, items);
