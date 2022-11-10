@@ -45,7 +45,7 @@
     align-items: center;
 }
 #listing_div_second{
-    border: 2px solid teal;
+    border: 0px solid rgb(215, 24, 183);
     width: 97%;
     /* height: 99%; */
     display: flex;
@@ -53,36 +53,118 @@
 }
 #append_div{
    width: 98%;
-   border: 1px solid yellowgreen;
+   border: 0px solid yellowgreen;
    height: 100%;
    display: grid;
    grid-template-columns: repeat(4,1fr);
-   
    justify-content:space-evenly;
 }
 #change_page{
     width: 98%;
     height: 100px;
-    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0px solid green;
 }
 .appimg{
-    width: 80%;
+    width: 60%;
+    margin-bottom: 8%;
     /* height: 30%; */
 }
 .appparent{
-    border: 1px solid black;
+    border: 0px solid black;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 5%;
+    border-radius: 5%;
+    border-radius: 16px 6px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    font-family: Inter;
 
 }
 
-.indiv{
-    height: 25%;
-    width: 100%;
-    border: 5px solid black;
-   
+.star_img{
+    width: 10%;
+    }
+.rating{
+    color: #8292B4;
+    font-size:smaller;
+    
+    
+    /* width: 20%; */
+}
+.appindiv{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(185, 211, 209, 0.6);
+    border-radius: 16px 6px;
+
+    
+
+}
+.comp{
+    margin-bottom: 10%;
+}
+.cata{
+    color: #8292B4;
+
+}
+.rateindiv{
+    border: 0px solid black;
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.review{
+    /* margin-left: 2%; */
+    color: #8292B4;
+    font-size:smaller;
+
+}
+.appbtn{
+    
+    background-color: rgb(130, 157, 167);
+    padding: 11px 20px;
+    color: #457eff;
+    font-weight: 600;
+    background-color: #f1f5ff;
+    display: inline-block;
+    border-radius: 27px;
+    border: 0px;
+    font-size: 15px;
+
+}
+#change_page_in_div{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px solid green;
+}
+
+
+#drop1{
+    width: 80%;
+    
+}
+#sector1{
+    outline: none;
+    border: none;
+}
+#firstdrop{
+    position: relative;
+    max-width:50%;
 }
