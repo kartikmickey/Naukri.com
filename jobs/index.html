@@ -8,40 +8,101 @@
       src="https://kit.fontawesome.com/16bc15d936.js"
       crossorigin="anonymous"
     ></script>
-    <title>Jobs</title>
     <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div id="container2">
-      <div class="select-btn">
-        <span class=" ">Location</span>
-        <span class="arrow-dwn"><i class="fa-solid fa-chevron-down"></i></span>
-      </div>
-      <ul id="list-items">
-        <li class="items">
-          <span class="checkbox">
-            <i class="fa-solid fa-check"></i>
-          </span>
-          <span class="item-text">Bangalore</span>
-        </li>
-        <li class="items">
-          <span class="checkbox">
-            <i class="fa-solid fa-check"></i>
-          </span>
-          <span class="item-text">Pune</span>
-        </li>
-        <li class="items">
-          <span class="checkbox">
-            <i class="fa-solid fa-check"></i>
-          </span>
-          <span class="item-text">Ahemdabad</span>
-        </li>
-      </ul>
-    </div>
-    <div>
+    <div id="master">
       <div id="container">
-        <div id="div1"></div>
+        <div class="select-btn">
+          <span class=" ">Department</span>
+          <span class="arrow-dwn"
+            ><i class="fa-solid fa-chevron-down"></i
+          ></span>
+        </div>
+        <ul id="list-items">
+          <li class="items">
+            <span class="checkbox">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="item-text">Engineering - Software & QA</span>
+          </li>
+          <li class="items">
+            <span class="checkbox">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="item-text">IT & Information Security</span>
+          </li>
+          <li class="items">
+            <span class="checkbox">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="item-text">Sales & Business Development</span>
+          </li>
+          <li class="items">
+            <span class="checkbox">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="item-text">Customer Success, Service & Operation</span>
+          </li>
+        </ul>
+        <div class="select-btn" id="select-btn2">
+          <span class=" ">Location</span>
+          <span class="arrow-dwn"
+            ><i class="fa-solid fa-chevron-down"></i
+          ></span>
+        </div>
+        <ul id="list-items1">
+          <li class="items" id="items">
+            <span class="checkbox">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="item-text">Bangalore/Bengaluru</span>
+          </li>
+          <li class="items">
+            <span class="checkbox">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="item-text">Pune</span>
+          </li>
+          <li class="items">
+            <span class="checkbox">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="item-text">Hyderabad</span>
+          </li>
+          <li class="items">
+            <span class="checkbox">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="item-text">Mumbai</span>
+          </li>
+          <li class="items">
+            <span class="checkbox">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="item-text">Gurgaon/Gurugram</span>
+          </li>
+          <li class="items">
+            <span class="checkbox">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="item-text">Vadodara</span>
+          </li>
+        </ul>
       </div>
+      <div>
+        <div class="sort">
+          <button id="sort-by-rev-btn" class="button-17" role="button">
+            Sort by: Revelance
+          </button>
+          <button id="sort-by-dt-btn" class="button-17" role="button">
+            Sort by: Date
+          </button>
+        </div>
+        <div id="container2"></div>
+      </div>
+      <div id="container3"></div>
     </div>
   </body>
 </html>
