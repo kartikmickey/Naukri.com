@@ -423,3 +423,214 @@ center
     right: 0;
     /* border-radius: 3px 0 0 3px; */
   }
+  #button{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  #button>button{
+    cursor: pointer;
+    text-align: center;
+    height: 48px;
+    width: 195px;
+    border: 1px solid #457EFF;
+    color: #457EFF;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size:
+17px;
+line-height:
+24px;
+/* padding: 9px 9px; */
+font-weight:
+600;
+  }
+
+#triple{
+    /* border: 1px solid green; */
+    width: 1100px;
+    height: 420px;
+    margin: auto;
+    margin-bottom: 80px;
+    display: flex;
+}
+#triple>:first-child{
+    margin: auto;
+    width: 430px;
+    background-color: #fef9f4;
+    /* border: 1px solid black; */
+    height: 80%;
+    border-radius: 15px 0px 0 4px;
+}
+#triple>:nth-child(2){
+    margin: auto;
+    width: 550px;
+    border: 1px solid #dde5ea ;
+    /* box-shadow: black; */
+     /* border: 1px solid black; */
+    height: 100%;
+    border-radius: 15px 4px;
+}
+#triple>:nth-child(3){
+    margin: auto;
+    width: 130px;
+    /* border: 1px solid black; */
+    height: 80%;
+    border-radius: 15px 4px;
+    border-radius: 0px 4px 15px 0;
+    background-color: #fef9f4;
+}
+#triple>:first-child>:first-child{
+    width: 100px;
+    margin-top: 55px;
+    margin-bottom: 0%;
+    margin-left: 95px;
+    /* border: 1px solid black; */
+    height: 100px;
+}
+#triple>:first-child>:first-child>img{
+    height: 100%;
+}
+#triple>:first-child>:nth-child(2){
+    /* width: 100px; */
+    /* margin-top: 55px; */
+    /* margin-bottom: 0%; */
+    margin-left: 95px;
+    /* border: 1px solid black; */
+    /* height: 100px; */
+}
+#triple>:first-child>:nth-child(2)>h1{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color:
+#1B2437;
+line-height:
+40px;
+font-size:
+27px;
+font-weight:
+700;
+}
+#triple>:first-child>:nth-child(3){
+    /* width: 100px; */
+    /* margin-top: 55px; */
+    /* margin-bottom: 0%; */
+    margin-left: 95px;
+    /* border: 1px solid black; */
+    /* height: 100px; */
+}
+#triple>:first-child>:nth-child(3)>p{
+    margin-top: 5px;
+    margin-bottom: 0%;
+    color:
+#8292B4;
+font-size:
+17px;
+line-height:
+26px;
+font-weight:
+400
+}
+.slideshow-container2{
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 70%;
+    position: relative;
+    /* border: 1px solid black; */
+}
+.mySlides2{
+    width: 100%;
+    /* border: 1px solid green; */
+    /* margin: auto; */
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+    display: none;
+    /* justify-content: space-between; */
+    /* display: none; */
+}
+.mySlides2>div{
+    /* justify-content: space-between; */
+    border: 1px solid #dde5ea;
+    border-radius: 15px 4px;
+    width: 205px;
+    height: 80px;
+    /* margin: auto; */
+}
+.mySlides2>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+      /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    width: 215px;
+    height: 90px;
+}
+.mySlides2>div>h3{
+    color:
+#1B2437;
+font-size:
+17px;
+line-height:
+20px;
+font-weight:
+500;
+margin: 0%;
+margin-top: 17px;
+margin-left: 13px;
+}
+.mySlides2>div>p{
+    color: #8292B4;
+    font-size:
+13px;
+line-height:
+20px;
+font-weight:
+400;
+margin: 0%;
+margin-left: 10px;
+}
+.mySlides2>div>p>span>img{
+    margin-left: 13px;
+    height: 9.9px;
+}
+.prev2, .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: gray;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    margin-left: -75px;
+    /* border-radius: 0 3px 3px 0; */
+    user-select: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .next2 {
+    right: 0;
+    margin-right: -75px;
+    /* border-radius: 3px 0 0 3px; */
+  }
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    /* background-color: #717171; */
+    background-color: #ff7555;
+    width: 20px;
+    border-radius: 30px;
+  }

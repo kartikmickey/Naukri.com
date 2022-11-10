@@ -82,3 +82,50 @@ function plusSlides1(n) {
     }
     slides1[slideIndex1-1].style.display = "flex";
   }
+
+
+
+  let prev2 = document.querySelector(".prev2")
+prev2.onclick = ()=>{
+    plusSlides2(-1);
+    console.log("hello")
+}
+let next2 = document.querySelector(".next2");
+next2.onclick = ()=>{
+    plusSlides2(1);
+    console.log("hello")
+}
+
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+    showSlides2(slideIndex2 += n);
+  };
+  function currentSlide2(n) {
+    showSlides2(slideIndex2 = n);
+  }
+
+  function showSlides2(n) {
+    let i;
+    let slides2 = document.getElementsByClassName("mySlides2");
+    let dots = document.getElementsByClassName("dot");
+    next2.style.display = "block";
+    prev2.style.display = "block"
+    if (n == slides2.length) {
+        // slideIndex = 1
+        next2.style.display = "none";
+    }
+    if (n == 1) {
+        // slideIndex = slides.length;
+        prev2.style.display = "none";
+    }
+    for (i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides2[slideIndex2-1].style.display = "grid";
+    dots[slideIndex2-1].className += " active";
+  }
