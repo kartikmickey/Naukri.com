@@ -84,9 +84,7 @@
     /* background-color:white; */
     /* border-color: #457eff; */
     color: #457eff;
-   
- 
-    cursor: pointer;
+     cursor: pointer;
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -372,3 +370,21 @@
     cursor: pointer;
     /* transform: translate(5px); */
 }
+.overlay{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    background: rgb(0,0,0,0.5);
+    height: 100vh;
+    z-index:- 3;
+    opacity:0;
+    transition: 1s;
+    
+}
+.showoverlay{
+ z-index: 3;
+    opacity: 1;
+} 
+/* .showlogin{
+    visibility: visible;
+} */
