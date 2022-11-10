@@ -1,6 +1,51 @@
-import { appendData } from "./scripts/append.js";
+const selectBtn = document.querySelector(".select-btn");
+const items = document.querySelectorAll(".items");
+console.log(selectBtn, items);
 
-const parent_div = document.getElementById("container");
+selectBtn.addEventListener("click", () => {
+  selectBtn.classList.toggle("open");
+});
+
+items.forEach((items) => {
+  items.addEventListener("click", () => {
+    items.classList.toggle("checked");
+
+    let checked = document.querySelectorAll(".checked");
+    let btnText = document.querySelector(".btn-text");
+    console.log(checked);
+    if (checked.innerText == "Pune") {
+      console.log("You Win");
+    } else {
+      console.log("Try Again");
+    }
+  });
+});
+const selectBtn2 = document.querySelector("#select-btn2");
+const items1 = document.querySelectorAll("#items");
+console.log(selectBtn2, items1);
+
+selectBtn2.addEventListener("click", () => {
+  selectBtn2.classList.toggle("open");
+});
+
+items1.forEach((items1) => {
+  items1.addEventListener("click", () => {
+    items1.classList.toggle("checked1");
+
+    let checked1 = document.querySelectorAll(".checked1");
+    let btnText1 = document.querySelector(".btn-text1");
+    console.log(checked);
+    if (checked.innerText == "Pune") {
+      console.log("You Win");
+    } else {
+      console.log("Try Again");
+    }
+  });
+});
+
+//----------------------------------------------------------------------//
+
+const parent_div = document.getElementById("container2");
 
 let data = [
   {
@@ -144,29 +189,73 @@ let data = [
     date: "08 nov 2022",
   },
 ];
-// console.log(data);
 
-window.onload = () => {
+const appendData = (data, parent_div) => {
   parent_div.innerHTML = null;
-  getData(data, parent_div);
+  data.forEach((data) => {
+    let div = document.createElement("div");
+    div.id = "div";
+
+    let title = document.createElement("h3");
+    title.textContent = data.title;
+    title.id = "title";
+
+    let company = document.createElement("h4");
+    company.textContent = data.company;
+    company.id = "company";
+
+    let reviews = document.createElement("p");
+    reviews.textContent = data.reviews;
+
+    let image = document.createElement("img");
+    image.src = data.image;
+
+    let experience = document.createElement("p");
+    experience.textContent = data.experience;
+
+    let salary = document.createElement("p");
+    salary.textContent = data.salary;
+
+    let location = document.createElement("p");
+    location.textContent = data.location;
+
+    let description = document.createElement("p");
+    description.textContent = data.description;
+
+    let role = document.createElement("p");
+    role.textContent = data.role;
+
+    let department = document.createElement("p");
+    department.textContent = data.department;
+
+    let date = document.createElement("p");
+    date.textContent = data.date;
+
+    div.append(
+      title,
+      company,
+      reviews,
+      experience,
+      salary,
+      location,
+      description,
+      role,
+      department,
+      date,
+      image
+    );
+    parent_div.append(div);
+  });
 };
-const getData = (data, parent_div) => {
-  appendData(data, parent_div);
-};
 
-//---------------Sorting datewise-------------------//
-
-// const select_tag = document.getElementById("list");
-// select_tag.addEventListener("change", (el) => {
-//   let selectedValue = document.getElementById("list").value;
-//   if (selectedValue == "relevance") {
-//     appendData(data, parent_div);
-//   } else if (selectedValue == "date") {
-//     console.log("invoked");
-//     appendData(sortedData, parent_div);
-//   }
-// });
-
+appendData(data, parent_div);
+//-----------------------------------------------------//
+const sortbydtbtn = document.getElementById("sort-by-dt-btn");
+sortbydtbtn.addEventListener("click", function (el) {
+  let sortedData = data.sort(customSort);
+  console.log(sortedData);
+  appendData(sortedData, parent_div);
+});
 const customSort = (a, b) => {
   // console.log(a);
   const dateA = new Date(a.date);
@@ -178,54 +267,20 @@ const customSort = (a, b) => {
   }
   return 0;
 };
-let sortedData = data.sort(customSort);
-console.log(sortedData);
-
-//------------------------------------------------//
-const max = data.filter(function (el) {
-  return el.company == "SAP";
+const sortbyrevbtn = document.getElementById("sort-by-rev-btn");
+sortbyrevbtn.addEventListener("click", function (el) {
+  let sortedData1 = data.sort(customSort1);
+  console.log(sortedData1);
+  appendData(sortedData1, parent_div);
 });
-
-// appendData(max);
-
-//--------------------------------------------------//
-// const selectBox = document.getElementById("selectBox");
-// selectBox.onclick = () => {
-//   showCheckboxes();
-// };
-// const expanded = false;
-// function showCheckboxes() {
-//   console.log("Invoked");
-//   let checkboxes = document.getElementById("checkboxes");
-//   if (!expanded) {
-//     checkboxes.style.display = "block";
-//     expanded = true;
-//   } else {
-//     checkboxes.style.display = "none";
-//     expanded = false;
-//   }
-// }
-
-//---------------------------------------------------------------//
-const selectBtn = document.querySelector(".select-btn");
-const items = document.querySelectorAll(".items");
-console.log(selectBtn, items);
-
-selectBtn.addEventListener("click", () => {
-  selectBtn.classList.toggle("open");
-});
-
-items.forEach((items) => {
-  items.addEventListener("click", () => {
-    items.classList.toggle("checked");
-
-    let checked = document.querySelectorAll(".checked");
-    let btnText = document.querySelector(".btn-text");
-    console.log(checked);
-    if (checked.innerText == "Pune") {
-      console.log("You Win");
-    } else {
-      console.log("Try Again");
-    }
-  });
-});
+const customSort1 = (a, b) => {
+  // console.log(a);
+  const dateA = new Date(a.date);
+  const dateB = new Date(b.date);
+  if (dateA < dateB) {
+    return -1;
+  } else if (dateA > dateB) {
+    return 1;
+  }
+  return 0;
+};
