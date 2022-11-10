@@ -1,6 +1,6 @@
 const selectBtn = document.querySelector(".select-btn");
 const items = document.querySelectorAll(".items");
-console.log(selectBtn, items);
+// console.log(selectBtn, items);
 
 selectBtn.addEventListener("click", () => {
   selectBtn.classList.toggle("open");
@@ -12,7 +12,7 @@ items.forEach((items) => {
 
     let checked = document.querySelectorAll(".checked");
     let btnText = document.querySelector(".btn-text");
-    console.log(checked);
+    // console.log(checked);
     if (checked.innerText == "Pune") {
       console.log("You Win");
     } else {
@@ -20,9 +20,10 @@ items.forEach((items) => {
     }
   });
 });
+//-----------------------------------------------//
 const selectBtn2 = document.querySelector("#select-btn2");
 const items1 = document.querySelectorAll("#items");
-console.log(selectBtn2, items1);
+// console.log(selectBtn2, items1);
 
 selectBtn2.addEventListener("click", () => {
   selectBtn2.classList.toggle("open");
@@ -34,8 +35,54 @@ items1.forEach((items1) => {
 
     let checked1 = document.querySelectorAll(".checked1");
     let btnText1 = document.querySelector(".btn-text1");
-    console.log(checked);
-    if (checked.innerText == "Pune") {
+    // console.log(checked1);
+    if (checked1.innerText == "Pune") {
+      console.log("You Win");
+    } else {
+      console.log("Try Again");
+    }
+  });
+});
+//-------------------------------------------------------------//
+const selectBtn3 = document.querySelector("#select-btn3");
+const items2 = document.querySelectorAll("#items");
+// console.log(selectBtn2, items1);
+
+selectBtn3.addEventListener("click", () => {
+  selectBtn3.classList.toggle("open");
+});
+
+items2.forEach((items2) => {
+  items2.addEventListener("click", () => {
+    items2.classList.toggle("checked1");
+
+    let checked1 = document.querySelectorAll(".checked1");
+    let btnText1 = document.querySelector(".btn-text1");
+    // console.log(checked1);
+    if (checked1.innerText == "Pune") {
+      console.log("You Win");
+    } else {
+      console.log("Try Again");
+    }
+  });
+});
+//----------------------------------------------------------//
+const selectBtn4 = document.querySelector("#select-btn4");
+const items4 = document.querySelectorAll("#items");
+// console.log(selectBtn2, items1);
+
+selectBtn4.addEventListener("click", () => {
+  selectBtn4.classList.toggle("open");
+});
+
+items4.forEach((items4) => {
+  items4.addEventListener("click", () => {
+    items4.classList.toggle("checked1");
+
+    let checked1 = document.querySelectorAll(".checked1");
+    let btnText1 = document.querySelector(".btn-text1");
+    // console.log(checked1);
+    if (checked1.innerText == "Pune") {
       console.log("You Win");
     } else {
       console.log("Try Again");
@@ -55,7 +102,7 @@ let data = [
     image: "https://www.naukri.com/hotjobs/images/v3/Accen_nov20.gif",
     experience: "2-5 Yrs",
     salary: "Not disclosed",
-    location: "Bangalore",
+    location: "Bengaluru",
     description:
       "Good knowledge & work experience in SFDC configuration, customization, programming with...",
     role: "Software Developement",
@@ -83,7 +130,7 @@ let data = [
     image: "https://img.naukimg.com/logo_images/v2/mobile/410527.gif",
     experience: "2-5 Yrs",
     salary: "Not disclosed",
-    location: "Bangalore",
+    location: "Bengaluru",
     description:
       "Experience in large Windchill Implementation and Migration projects Well versed with We...",
     role: "Software Developement",
@@ -97,7 +144,7 @@ let data = [
     image: "https://img.naukimg.com/logo_images/groups/v1/6543131.gif",
     experience: "2-5 Yrs",
     salary: "Not disclosed",
-    location: "Bangalore",
+    location: "Vadodara",
     description:
       "Role: ServiceNow Developer Experience:4 years to 7 Years.4+ Years of experience with Se...",
     role: "Software Developement",
@@ -125,7 +172,7 @@ let data = [
     image: "https://img.naukri.com/logo_images/v3/838417.gif",
     experience: "2-5 Yrs",
     salary: "Not disclosed",
-    location: "Bangalore",
+    location: "Bengaluru",
     description:
       "5+ years of experience in Service NOW administration & development Mandatory Hands-On e...",
     role: "Software Developement",
@@ -181,7 +228,7 @@ let data = [
     image: "https://img.naukimg.com/logo_images/groups/v1/47784.gif",
     experience: "2-5 Yrs",
     salary: "Not disclosed",
-    location: "Pune",
+    location: "Bengaluru",
     description:
       "GitHub Actions, Jenkins, GoCD, CircleCI) # Experienc e working with Agile methodologies...",
     role: "Software Developement",
@@ -253,7 +300,7 @@ appendData(data, parent_div);
 const sortbydtbtn = document.getElementById("sort-by-dt-btn");
 sortbydtbtn.addEventListener("click", function (el) {
   let sortedData = data.sort(customSort);
-  console.log(sortedData);
+  // console.log(sortedData);
   appendData(sortedData, parent_div);
 });
 const customSort = (a, b) => {
@@ -270,7 +317,7 @@ const customSort = (a, b) => {
 const sortbyrevbtn = document.getElementById("sort-by-rev-btn");
 sortbyrevbtn.addEventListener("click", function (el) {
   let sortedData1 = data.sort(customSort1);
-  console.log(sortedData1);
+  // console.log(sortedData1);
   appendData(sortedData1, parent_div);
 });
 const customSort1 = (a, b) => {
@@ -284,3 +331,22 @@ const customSort1 = (a, b) => {
   }
   return 0;
 };
+
+const bangalore = document.getElementById("bangalore");
+bangalore.addEventListener("click", function () {
+  appendData(filteredData, parent_div);
+});
+
+let filteredData = data.filter(function (el) {
+  return el.location == "Bengaluru";
+});
+
+let filteredData1 = data.filter(function (el) {
+  return el.location == "Pune";
+});
+
+const pune = document.getElementById("pune");
+pune.addEventListener("click", function () {
+  console.log("Pune");
+  appendData(filteredData1, parent_div);
+});
