@@ -58,3 +58,16 @@
          eminside.classList.toggle("hideandsick4");
          console.log("ooo")
       }
+
+      // let login=document.querySelector("#btn1");
+      // login.onclick=function(){
+      //    showallthings()
+      // }
+       function showallthings(){
+      document.querySelector(".overlay").classList.add("showoverlay")
+        document.querySelector(".form-popup").classList.add("showlogin")
+       }
+       function removeitm(){
+         document.querySelector(".overlay").classList.remove("showoverlay")
+         document.querySelector(".form-popup").classList.remove("showlogin")
+       }
