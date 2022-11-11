@@ -12,15 +12,33 @@
 
 */
 .navb{
-    
+    display: flex;
+    height:69px;
+    width: 1290px;
+    /* border: 1px solid red; */
+    margin: auto;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+     margin-top: 0%;
+     margin-left: -10px;
+     height: 60px;
+    background-color:  #fff;
+    /* border: 1px solid #eaf1f5; */
+    border-radius: 3.5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
+
+
 .content {
     width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 auto;
+    margin-top: 20px;
+    
 }
+
 h2{
     size: 19px;
     margin-block-start: 0.83em;
@@ -41,30 +59,53 @@ div {
     display: block;
 }
 .already{
-border: 1px solid red ;
+/* border: 1px solid red ; */
 height: 100%;
 width: auto;
+margin-left: auto;
+    color: #445578;
+    margin-top: 20px;
+    margin-right: 65px;
+    font-size: 14.5px;
    
+}
+.already>span{
+    color: #457eff;
+    cursor: pointer;
+    font-family: Inter;
+    font-weight: 400;
+    margin-right: 5px;
+
 }
 .static-list{
     width: 280px;
-    height: 200px;
+   min-height: 200px;
     margin: 200px 0 0;
     background: #fff;
     border: 1px dashed #d3e1ea;
+    /* border: 1px solid red; */
     border-radius: 20px 14px;
     padding: 65px 32px 32px;
-    position: fixed;
+  float: left;
     position: relative;
-    list-style: none;
+    display: inline-block;
+    z-index: 99;
+    position: sticky;
+   
     font-family: Inter,Roboto,sans-serif,Helvetica;
     font-weight: 400;
-  z-index: 1;
+  
     
 }
 .static-list ul li p {
     font-size: 13px;
     color: #445578;
+}
+.static-list>ul>li>img{
+   width: 50px;
+   height: 50px;
+   overflow: hidden;
+   visibility: hidden;
 }
 .static-list h2 {
     width: 350px;
@@ -109,7 +150,7 @@ width: auto;
     float: right;
 }
 .right-container .right-pane {
-    margin-top: 32px;
+    margin-top: 65px;
     background: #fff;
     border-radius: 20px;
     position: relative;
@@ -468,9 +509,9 @@ main-4 {
 .orWrap {
     font-weight: 600;
     color: #445578;
-    height: 33px;
+    height: 20px;
     border: 1px solid #d3e1ea;
-    padding: 6px 8px;
+    padding: 6px 6px;
     border-radius: 50%;
     background: #fff;
     margin-left: -16px;
@@ -597,4 +638,41 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+.registerWrapper .googleSignUpWrapper {
+    width: calc(100% - 600px);
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    margin-top: 135px;
+    margin-left: 25px;
+    z-index: 2;
+    border-left: 1px solid #d3e1ea;
+    height: 150px;
+    padding-top: 80px;
+}
+.resman-input-error .__input {
+    /* content: 2px; */
+    border: 2px solid #ee5c5c;
+    background-color: #fff;
+}
+.resman-input .__input {
+    width: 100%;
+    outline: none;
+}
+.registerWrapper .formWrapper .formTag .formField.submitWrap .submitbtn:disabled {
+    background-color: #d3e1ea;
+
+}
+.registerWrapper .formWrapper .formTag .formField.submitWrap .submitbtn {
+    margin-top: 5px;
+    
+    width: fit-content;
+}
+.resman-btn-regular {
+    font-size: 17px;
+    line-height: 22px;
+    padding: 12px 24px;
+    border-radius: 23px;
+    font-weight: 600;
 }

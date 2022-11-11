@@ -4,7 +4,7 @@
    let  navbar=document.querySelector(".navbar")
    window.onscroll=function(){
    navbar.classList.add("sticky")
-   navbar.classList.add("navscroll")
+   // navbar.classList.("navscroll")
    }
    let inside=document.querySelector(".inside");
    let jobs=document.querySelector(".jobs");
