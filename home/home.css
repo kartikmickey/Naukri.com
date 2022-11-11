@@ -1289,3 +1289,123 @@ padding: 3.5px 7px;
     right: 0;
     /* border-radius: 3px 0 0 3px; */
   }
+
+  #last{
+    width: 1100px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    background-color: #f7f8ff;
+    border-radius: 15px 4px;
+  }
+  #last>div{
+    width: 50%;
+    /* border: 1px solid black; */
+  }
+  #last>div>img{
+    width: 95%;
+    /* border: 1px solid black; */
+    float: right;
+  }
+  #last>:first-child>div{
+    display: flex;
+    margin-left: 100px;
+    height: 170px;
+    /* border: 1px solid black; */
+}
+  #last>:first-child>h4{
+    margin: 0%;
+    margin-left: 100px;
+    margin-top: 70px;
+    color:
+#1B2437;
+font-size:
+27px;
+line-height:
+30px;
+font-weight:
+700;
+
+  }
+  #last>:first-child>div>:nth-child(2){
+    /* margin-left: 100px; */
+    height: 130px;
+    border: 1px solid #b4e8fc;
+    text-align: center;
+    background-color: white;
+    border-radius: 13px;
+}
+#last>:first-child>div>:nth-child(2)>p{
+    margin: 0%;
+    color:
+#8292B4;
+font-size:
+10px;
+line-height:
+20px;
+font-weight:
+400;
+margin-bottom: 10px;
+margin-top: -1%;
+}
+#last>:first-child>div>:nth-child(2)>img{
+    width: 90px;
+    height: 90px;
+    
+    /* margin-bottom: 5px; */
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+#last>:first-child>div>:nth-child(1){
+    height: 130px;
+    width: 250px;
+    margin-right: 50px;
+    /* border: 1px solid black; */
+}
+#last>:first-child>div>:nth-child(1)>p{
+    color:
+    #8292B4;
+    font-size:
+13px;
+line-height:
+20px;
+font-weight:
+400;
+margin-top: 9px
+}
+
+#last>:first-child>div>:nth-child(1)>div{
+    border: 1px solid #dfe7eb ;
+    background-color: white;
+    font-size: 13px;
+    font-weight: 400px;
+    color: #645e56;
+    width: 250px;
+    height: 40px;
+    /* padding: 10px 18px; */
+    border-radius: 30px;
+    margin-bottom: 15px;
+    display: flex;
+}
+#last>:first-child>div>:nth-child(1)>div>p{
+    margin-left: 20px;
+    width: 140px;
+    /* border: 1px solid green; */
+}
+#last>:first-child>div>:nth-child(1)>div>span>button{
+    background-color: #457EFF;
+    font-size: 13px;
+    color: #FFFFFF;
+    border: none;
+    height: 31px;
+    width: 70px;
+    margin-top: 4.5px;
+    /* padding: 6px 10px; */
+    border-radius: 30px;
+    margin-left: 11px;
+    line-height:
+14px;
+font-weight:
+600;
+}
