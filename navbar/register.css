@@ -86,7 +86,7 @@ margin-left: auto;
     /* border: 1px solid red; */
     border-radius: 20px 14px;
     padding: 65px 32px 32px;
-  float: left;
+  /* float: left; */
     position: relative;
     display: inline-block;
     z-index: 99;
@@ -661,7 +661,7 @@ p {
     outline: none;
 }
 .registerWrapper .formWrapper .formTag .formField.submitWrap .submitbtn:disabled {
-    background-color: #d3e1ea;
+    background-color: blue;
 
 }
 .registerWrapper .formWrapper .formTag .formField.submitWrap .submitbtn {
@@ -675,4 +675,5 @@ p {
     padding: 12px 24px;
     border-radius: 23px;
     font-weight: 600;
+   
 }
