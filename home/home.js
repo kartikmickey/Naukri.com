@@ -43,7 +43,10 @@ function plusSlides(n) {
     slides[slideIndex-1].style.display = "flex";
   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c79b37e4fa6f04f40e8ec1cf2139db634cc1181d
   let prev1 = document.querySelector(".prev1")
 prev1.onclick = ()=>{
     plusSlides1(-1);
@@ -82,4 +85,54 @@ function plusSlides1(n) {
       slides1[i].style.display = "none";
     }
     slides1[slideIndex1-1].style.display = "flex";
+<<<<<<< HEAD
+=======
+  }
+
+
+
+  let prev2 = document.querySelector(".prev2")
+prev2.onclick = ()=>{
+    plusSlides2(-1);
+    console.log("hello")
+}
+let next2 = document.querySelector(".next2");
+next2.onclick = ()=>{
+    plusSlides2(1);
+    console.log("hello")
+}
+
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+    showSlides2(slideIndex2 += n);
+  };
+  function currentSlide2(n) {
+    showSlides2(slideIndex2 = n);
+  }
+
+  function showSlides2(n) {
+    let i;
+    let slides2 = document.getElementsByClassName("mySlides2");
+    let dots = document.getElementsByClassName("dot");
+    next2.style.display = "block";
+    prev2.style.display = "block"
+    if (n == slides2.length) {
+        // slideIndex = 1
+        next2.style.display = "none";
+    }
+    if (n == 1) {
+        // slideIndex = slides.length;
+        prev2.style.display = "none";
+    }
+    for (i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides2[slideIndex2-1].style.display = "grid";
+    dots[slideIndex2-1].className += " active";
+>>>>>>> c79b37e4fa6f04f40e8ec1cf2139db634cc1181d
   }
