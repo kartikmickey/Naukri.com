@@ -1,15 +1,19 @@
    
 
 
-   let  navbar=document.querySelector("#navbar")
+   let  navbar=document.querySelector(".navbar")
    window.onscroll=function(){
    navbar.classList.add("sticky")
+   navbar.classList.add("navscroll")
    }
    let inside=document.querySelector(".inside");
    let jobs=document.querySelector(".jobs");
    jobs.onclick=function(){
       myfirstclick()
 
+   }
+   jobs.onclick=function(){
+     window.classList.add("body")
    }
    jobs.onmouseleave=function(){
      
@@ -70,4 +74,14 @@
        function removeitm(){
          document.querySelector(".overlay").classList.remove("showoverlay")
          document.querySelector(".form-popup").classList.remove("showlogin")
+       }
+
+       let ntn2=document.querySelector("#btn2")
+       btn2.onclick=function(){
+         window.location.href="./register.html"
+       }
+
+       let register=document.querySelector("#register")
+       register.onclick=function(){
+         window.location.href="./register.html"
        }
