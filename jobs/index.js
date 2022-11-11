@@ -64,7 +64,7 @@ items2.forEach((items2) => {
     let checked1 = document.querySelectorAll(".checked1");
     let btnText1 = document.querySelector(".btn-text1");
     // console.log(checked1);
-    if (checked1.innerText == "Pune") {
+    if (checked1.innerText == "") {
       console.log("You Win");
     } else {
       console.log("Try Again");
@@ -87,7 +87,30 @@ items4.forEach((items4) => {
     let checked1 = document.querySelectorAll(".checked1");
     let btnText1 = document.querySelector(".btn-text1");
     // console.log(checked1);
-    if (checked1.innerText == "Pune") {
+    if (checked1.innerText == "") {
+      console.log("You Win");
+    } else {
+      console.log("Try Again");
+    }
+  });
+});
+//------------------------------------------------------//
+const selectBtn5 = document.querySelector("#select-btn5");
+const items5 = document.querySelectorAll("#items");
+// console.log(selectBtn2, items1);
+
+selectBtn5.addEventListener("click", () => {
+  selectBtn5.classList.toggle("open");
+});
+
+items5.forEach((items5) => {
+  items5.addEventListener("click", () => {
+    items5.classList.toggle("checked1");
+
+    let checked1 = document.querySelectorAll(".checked1");
+    let btnText1 = document.querySelector(".btn-text1");
+    // console.log(checked1);
+    if (checked1.innerText == "") {
       console.log("You Win");
     } else {
       console.log("Try Again");
@@ -101,44 +124,66 @@ const parent_div = document.getElementById("container2");
 
 let data = [
   {
-    title: "Salesforce Developer",
-    company: "Accenture : 4 Reviews",
-    reviews: "4 Reviews",
-    image: "https://www.naukri.com/hotjobs/images/v3/Accen_nov20.gif",
-    experience: "2-5 Yrs",
-    salary: "Not disclosed",
+    title: "WEB ANALYST/WEB TAGGING DEVELOPER",
+    company: "Infosys",
+    reviews: "14 Reviews",
+    image: "https://www.naukri.com/hotjobs/images/v3/infosys_nov13.gif",
+    experience: "From 3 to 5 year(s) of experience",
+    salary: "Not Disclosed by Recruiter",
     location: "Bengaluru",
     description:
-      "Good knowledge & work experience in SFDC configuration, customization, programming with...",
-    role: "Software Developement",
+      "JavaScriptWeb - AnalyticsData - AnalyticsDigital - marketing - RESTful APIs -HTML - JQuery - Analytics",
     department: "Engineering - Software & QA",
     date: "09 nov 2022",
   },
   {
-    title: "Full Stack Developer",
-    company: "IBM ",
+    title: "Dot Net Full Stack Development Application Developer",
+    company: "Accenture ",
     reviews: "122 Reviews",
-    image: "https://img.naukimg.com/logo_images/v2/mobile/16987.gif",
+    image: "https://www.naukri.com/hotjobs/images/v3/Accen_nov20.gif",
     experience: "2-5 Yrs",
     salary: "4,00,000 -9,00,000",
     location: "Pune",
     description:
-      "Good knowledge & work experience in SFDC configuration, customization, programming with...",
-    role: "Software Developement",
+      "Business - processWeb - application development - Front end - Database design - Debugging",
     department: "Engineering - Software & QA",
     date: "05 nov 2022",
   },
   {
-    title: "Hiring For Full Stack PHP Web Developer",
-    company: "Infosys",
-    reviews: "202 Reviews",
-    image: "https://img.naukimg.com/logo_images/v2/mobile/410527.gif",
+    title: "Senior Software Engineer",
+    company: "Mindtree",
+    reviews: "3015 Reviews",
+    image: "https://img.naukimg.com/logo_images/groups/v1/47784.gif",
     experience: "2-5 Yrs",
     salary: "Not disclosed",
+    location: "Pune",
+    description: "Web Api - ASP.NET - MVC",
+    department: "Engineering - Software & QA",
+    date: "01 nov 2022",
+  },
+  {
+    title: "Senior DevOps Engineer",
+    company: "Flipkart",
+    reviews: "3015 Reviews",
+    image: "https://img.naukimg.com/logo_images/groups/v1/533532.gif",
+    experience: "2-5 Yrs",
+    salary: "5,00,000 - 8,00,000",
     location: "Bengaluru",
     description:
-      "Experience in large Windchill Implementation and Migration projects Well versed with We...",
-    role: "Software Developement",
+      "Automation - devops - Apache - Monitoring - Recruitment - continuous integration - IT infrastructure - Cloud - Load balancing - Python",
+    department: "Engineering - Software & QA",
+    date: "01 nov 2022",
+  },
+  {
+    title: "Application Developer: Java Full Stack",
+    company: "IBM",
+    reviews: "1524 Reviews",
+    image: "https://img.naukimg.com/logo_images/groups/v1/19288.gif",
+    experience: "2-5 Yrs",
+    salary: "Not disclosed",
+    location: "Pune",
+    description:
+      "Backend - Front end - MySQL - Oracle - SQL - Hibernate - RDBMS - Web development - DBMS - Apache - Monitoring - Recruitment",
     department: "Engineering - Software & QA",
     date: "01 nov 2022",
   },
@@ -215,7 +260,7 @@ let data = [
   {
     title: "HCL Hiring Sr Software Develooer(Java)Bangalore",
     company: "Flipkart",
-    reviews: "4 Reviews",
+    reviews: "(420 Reviews)",
     image: "https://img.naukimg.com/logo_images/groups/v1/533532.gif",
     experience: "2-5 Yrs",
     salary: "Not disclosed",
@@ -229,13 +274,13 @@ let data = [
   {
     title: "Senior Software Developer",
     company: "Flipkart",
-    reviews: "4 Reviews",
-    image: "https://img.naukimg.com/logo_images/groups/v1/47784.gif",
+    reviews: "(4 Reviews)",
+    image: "https://img.naukimg.com/logo_images/groups/v1/533532.gif",
     experience: "2-5 Yrs",
     salary: "Not disclosed",
     location: "Bengaluru",
     description:
-      "GitHub Actions, Jenkins, GoCD, CircleCI) # Experienc e working with Agile methodologies...",
+      "GitHub Actions, Jenkins, GoCD, CircleCI # Experienc e working with Agile methodologies...",
     role: "Software Developement",
     department: "Engineering - Software & QA",
     date: "08 nov 2022",
@@ -258,38 +303,83 @@ const appendData = (data, parent_div) => {
 
     let reviews = document.createElement("p");
     reviews.textContent = data.reviews;
+    reviews.id = "reviews";
 
     let image = document.createElement("img");
     image.src = data.image;
+    image.id = "company_img";
 
     let experience = document.createElement("p");
     experience.textContent = data.experience;
+    experience.id = "experience";
 
     let salary = document.createElement("p");
     salary.textContent = data.salary;
+    salary.id = "salary";
 
     let location = document.createElement("p");
     location.textContent = data.location;
+    location.id = "location";
 
     let description = document.createElement("p");
     description.textContent = data.description;
+    description.id = "description";
 
     let role = document.createElement("p");
     role.textContent = data.role;
+    role.id = "role";
 
     let department = document.createElement("p");
     department.textContent = data.department;
+    department.id = "department";
 
     let date = document.createElement("p");
     date.textContent = data.date;
+    date.id = "date";
+
+    let logo = document.createElement("img");
+    logo.src =
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPivPx9tx4OlqdV6iT-siLLi9tB1qqrrQbnw&usqp=CAU";
+    logo.id = "logo";
+
+    let logo1 = document.createElement("img");
+    logo1.src =
+      "https://www.pinclipart.com/picdir/middle/75-750874_work-experience-svg-png-icon-free-download-356662.png";
+    logo1.id = "logo";
+
+    let pdiv = document.createElement("div");
+    pdiv.append(logo, location);
+    pdiv.id = "pdiv";
+
+    let pdiv1 = document.createElement("div");
+    pdiv1.append(logo1, experience);
+    pdiv1.id = "pdiv";
+
+    let logo2 = document.createElement("img");
+    logo2.src =
+      "https://static.vecteezy.com/system/resources/previews/009/663/927/non_2x/5-star-rating-review-star-transparent-free-png.png";
+    logo2.id = "logo2";
+
+    let logo3 = document.createElement("img");
+    logo3.src =
+      "https://www.clipartmax.com/png/middle/183-1832296_rupee-symbol-png-clipart-indian-rupee-symbol.png";
+    logo3.id = "logo";
+
+    let pdiv2 = document.createElement("div");
+    pdiv2.append(company, logo2);
+    pdiv2.id = "pdiv";
+
+    let pdiv3 = document.createElement("div");
+    pdiv3.append(logo3, salary);
+    pdiv3.id = "pdiv";
 
     div.append(
       title,
-      company,
+      pdiv2,
       reviews,
-      experience,
-      salary,
-      location,
+      pdiv1,
+      pdiv3,
+      pdiv,
       description,
       role,
       department,
@@ -354,4 +444,24 @@ const pune = document.getElementById("pune");
 pune.addEventListener("click", function () {
   console.log("Pune");
   appendData(filteredData1, parent_div);
+});
+
+let filteredData2 = data.filter(function (el) {
+  return el.company == "Accenture";
+});
+
+const accentur = document.getElementById("accenture");
+accentur.addEventListener("click", function () {
+  // console.log("Pune");
+  appendData(filteredData2, parent_div);
+});
+
+let filteredData3 = data.filter(function (el) {
+  return el.company == "Flipkart";
+});
+
+const flipkart = document.getElementById("flipkart");
+flipkart.addEventListener("click", function () {
+  // console.log("Pune");
+  appendData(filteredData3, parent_div);
 });

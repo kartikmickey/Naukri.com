@@ -41,6 +41,7 @@ body {
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+
 #select-btn2 {
   margin-top: 2%;
 }
@@ -48,6 +49,9 @@ body {
   margin-top: 2%;
 }
 #select-btn4 {
+  margin-top: 2%;
+}
+#select-btn5 {
   margin-top: 2%;
 }
 .select-btn .btn-text {
@@ -191,13 +195,13 @@ body {
   display: flex;
   box-sizing: border-box;
 }
-#div > img {
+#company_img {
   width: 4rem;
   /* border: 1px dotted navy; */
   overflow: hidden;
   position: absolute;
   display: block;
-  margin: -163px 450px;
+  margin: -178px 480px;
 }
 #title {
   font-size: 16px;
@@ -303,4 +307,50 @@ div p {
   /* border: 1px dotted palevioletred; */
   /* padding: 4%; */
   margin: 2%;
+}
+
+#title {
+  font-size: 16px;
+  font-weight: 600;
+}
+#company {
+  font-weight: 500;
+}
+#reviews {
+  color: #024ec9;
+  text-decoration: none;
+  margin-top: -4%;
+  margin-bottom: 1%;
+}
+#reviews:hover {
+  color: #0965f8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#experience,
+#salary,
+#location,
+#description,
+#role,
+#department,
+#date {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: #091e42;
+}
+#pdiv {
+  display: flex;
+}
+#logo {
+  height: 1rem;
+  margin-right: 1%;
+}
+#logo2 {
+  display: flex;
+  overflow: hidden;
+  width: 7rem;
+  height: auto;
+  margin-top: -5.2%;
 }
