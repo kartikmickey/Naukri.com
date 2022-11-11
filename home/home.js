@@ -173,3 +173,43 @@ function plusSlides3(n) {
   }
 
 
+  let prev4 = document.querySelector(".prev4")
+  prev4.onclick = ()=>{
+      plusSlides4(-1);
+      console.log("hello")
+  }
+  let next4 = document.querySelector(".next4");
+  next4.onclick = ()=>{
+      plusSlides4(1);
+      console.log("hello")
+  }
+  
+  let slideIndex4 = 1;
+  showSlides4(slideIndex4);
+  
+  function plusSlides4(n) {
+      showSlides4(slideIndex4 += n);
+    };
+    function currentSlide4(n) {
+      showSlides4(slideIndex4 = n);
+    }
+  
+    function showSlides4(n) {
+      let i;
+      let slides4 = document.getElementsByClassName("mySlides4");
+      next4.style.display = "block";
+      prev4.style.display = "block"
+      if (n == slides4.length) {
+          // slideIndex = 1
+          next4.style.display = "none";
+      }
+      if (n == 1) {
+          // slideIndex = slides.length;
+          prev4.style.display = "none";
+      }
+      for (i = 0; i < slides4.length; i++) {
+        slides4[i].style.display = "none";
+      }
+      slides4[slideIndex4-1].style.display = "flex";
+    }
+  
