@@ -85,7 +85,7 @@ font-weight: 400;
     /* border: 1px solid green; */
     border: 1.5px solid #dfe7eb ;
     display: flex;
-    border-radius: 15px 4px;
+    border-radius: 15px 0px;
     width: 160px;
     /* gap: 130px; */
     margin: auto;
@@ -118,7 +118,7 @@ font-size: 16.5px;
 #type2>div{
     border: 1.5px solid #dfe7eb ;
     display: flex;
-    border-radius: 15px 4px;
+    border-radius: 15px 0px;
     width: 160px;
     /* gap: 130px; */
     margin: auto;
@@ -179,7 +179,7 @@ font-weight:
     border: 1.5px solid #dfe7eb ;
     /* display: flex; */
     margin: auto;
-    border-radius: 15px 4px;
+    border-radius: 15px 0px;
 }
 .mySlides>div:hover{
     cursor: pointer;
@@ -423,10 +423,6 @@ center
     right: 0;
     /* border-radius: 3px 0 0 3px; */
   }
-<<<<<<< HEAD
-
- 
-=======
   #button{
     text-align: center;
     margin-top: 20px;
@@ -638,4 +634,3 @@ margin-left: 10px;
     width: 20px;
     border-radius: 30px;
   }
->>>>>>> c79b37e4fa6f04f40e8ec1cf2139db634cc1181d

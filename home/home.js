@@ -43,10 +43,6 @@ function plusSlides(n) {
     slides[slideIndex-1].style.display = "flex";
   }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> c79b37e4fa6f04f40e8ec1cf2139db634cc1181d
   let prev1 = document.querySelector(".prev1")
 prev1.onclick = ()=>{
     plusSlides1(-1);
@@ -85,8 +81,6 @@ function plusSlides1(n) {
       slides1[i].style.display = "none";
     }
     slides1[slideIndex1-1].style.display = "flex";
-<<<<<<< HEAD
-=======
   }
 
 
@@ -134,5 +128,4 @@ function plusSlides2(n) {
     }
     slides2[slideIndex2-1].style.display = "grid";
     dots[slideIndex2-1].className += " active";
->>>>>>> c79b37e4fa6f04f40e8ec1cf2139db634cc1181d
   }
