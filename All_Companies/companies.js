@@ -285,3 +285,19 @@ let body = document.getElementById("append_div");
 }
 
 append(data)
+//filter part//=>///////////////////....................................
+
+const selectBtn=document.querySelector(".select_btn")
+const items=document.querySelectorAll(".items");
+// console.log(selectBtn,items)
+selectBtn.addEventListener("click", ()=>{
+    selectBtn.classList.toggle("close")
+})
+items.forEach( items =>{
+    items.addEventListener("click",()=>{
+        items.classList.toggle("checked")
+    })
+})
+
+
+

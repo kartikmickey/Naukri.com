@@ -164,7 +164,85 @@
     outline: none;
     border: none;
 }
-#firstdrop{
+.firstdrop{
     position: relative;
-    max-width:50%;
+    max-width: 95%;
+    height: 250px;
+    
 }
+.select_btn{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid red;
+    height: 20%;
+    
+}
+.btn_txt{
+    font-size: 16px;
+    font-weight: 800;
+    color: #333;
+    /* color: skyblue; */
+    
+
+}
+.list_items{
+    position: relative;
+    margin-top: 15px;
+    background-color: white;
+    border: 1px solid red;
+    padding: 16px;
+    display:block;
+    
+}
+.close~.list_items{
+    display: none;
+
+}
+.arrow_dwn{
+    display: flex;
+    height: 18px;
+    width: 18px;
+    font-size: 15px;
+    transition: 0.3s;
+    border-radius: 50%;
+    background-color:#697798;
+    justify-content: center;
+    align-items: center;
+}
+.close~.arrow_dwn{
+    transform: rotate((-180deg));
+}
+.items{
+    list-style: none;
+    display: flex;
+    align-items:center;
+    height: 30px;
+}
+.checkbox{
+   
+    height:14px;
+    width: 14px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #c0c0c0;
+    /* transition: all 0.3s ease-in-out; */
+
+}
+.item_text{
+    font-size: 13px;
+    font-weight: 400;
+    color: #8292B4;
+
+}
+.check-icon{
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+}
+.items.checked.check-icon{
+    transform: scale(1);
+
+}
+
