@@ -1,6 +1,9 @@
 console.log("connected");
 
 
+
+
+
 let data = [
     {   
         id : 1,
@@ -8,6 +11,7 @@ let data = [
         catagory : "Global professional service firm",
         rating:4.2 +" "+"|",
         review:"3.6K+"+" "+"reviews",
+        type:"Technology",
         image : "https://img.naukimg.com/logo_images/groups/v2/42932.gif"
     },
     {
@@ -16,6 +20,8 @@ let data = [
         catagory : "A digital first approach to IT management",
         rating:4.4+" "+"|",
         review:"3.7K+"+" "+"reviews",
+        type:"IT",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/5462642.gif"
     },
     {   
@@ -24,6 +30,8 @@ let data = [
         catagory : "Leader in digital product engineering.",
         rating:4.9+" "+"|"+"32.7K+"+" "+"reviews",
         review:"",
+        type:"BPM",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/9558.gif"
     }, {   
         id : 4,
@@ -31,6 +39,9 @@ let data = [
         catagory : "DXC Technology Company.",
         rating:3.8+" "+"|",
         review:"377"+" "+"reviews",
+        
+        type:"IT",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/4264.gif"
     }, {   
         id : 5,
@@ -38,6 +49,8 @@ let data = [
         catagory : "Leading ITeS company with global presence.",
         rating:4.6+" "+"|",
         review:"33K+"+" "+"reviews",
+        type:"BPM",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/4156.gif"
     }, {   
         id : 6,
@@ -45,6 +58,8 @@ let data = [
         catagory : "Leader in materials engineering solutions.",
         rating:4.8+" "+"|",
         review:"3.0K+"+" "+"reviews",
+        type:"Technology",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/1574056.gif"
     }, {   
         id : 7,
@@ -52,6 +67,8 @@ let data = [
         catagory : "Digital transformation services provider.",
         rating:4.0+" "+"|",
         review:"41K+"+" "+"reviews",
+        type:"BPM",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/4577755.gif"
     }, {   
         id : 8,
@@ -59,6 +76,8 @@ let data = [
         catagory : "US-based consulting & technology services firm.",
         rating:4.1+" "+"|",
         review:"3.2K+"+" "+"reviews",
+        type:"BFSI",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/1527726.gif"
     }, {   
         id : 9,
@@ -66,6 +85,8 @@ let data = [
         catagory : "FIS is hiring 3 to 10yrs exp. in C++ & Mumps developer.",
         rating:4.5+" "+"|",
         review:"38.7K+"+" "+"reviews",
+        type:"IT",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/21746.gif"
     }, {   
         id : 10,
@@ -73,6 +94,8 @@ let data = [
         catagory : "Cloud-based platform for mortgage finance industry.",
         rating:4.8+" "+"|",
         review:"30.7K+"+" "+"reviews",
+        type:"IT",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/6206135.gif"
     }, {   
         id : 11,
@@ -80,6 +103,8 @@ let data = [
         catagory : "Global leader in technology services.",
         rating:3.9+" "+"|",
         review:"36K+"+" "+"reviews",
+        type:"BFSI",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/1288.gif"
     }, {   
         id : 12,
@@ -87,6 +112,8 @@ let data = [
         catagory : "Global leader in BSS, OSS and cloud.",
         rating:3.8+" "+"|",
         review:"56.2K+"+" "+"reviews",
+        type:"BPM",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/4614431.gif"
     }, {   
         id : 13,
@@ -94,6 +121,8 @@ let data = [
         catagory : "Global digital services and solutions provider.",
         rating:3.5+" "+"|",
         review:"31.7K+"+" "+"reviews",
+        type:"IT",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/233334.gif"
     }, {   
         id : 14,
@@ -101,6 +130,8 @@ let data = [
         catagory : "Global digital solutions & technology company",
         rating:4.0+" "+"|",
         review:"1.7K+"+" "+"reviews",
+        type:"IT",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/315118.gif"
     },
     {   
@@ -109,6 +140,8 @@ let data = [
         catagory : "Leading private sector bank in India.",
         rating:3.8+" "+"|",
         review:"3K+"+" "+"reviews",
+        type:"Technology",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/44512.gif"
     },
     {   
@@ -117,6 +150,8 @@ let data = [
         catagory : "Leading global telecom company.",
         rating:4.6+" "+"|",
         review:"3.1K+"+" "+"reviews",
+        type:"IT",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/126896.gif"
     },
     {   
@@ -125,6 +160,8 @@ let data = [
         catagory : "Trusted global solutions company.",
         rating:4.3+" "+"|",
         review:"5.1K+"+" "+"reviews",
+        type:"IT",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/3835862.gif"
     },
     {   
@@ -133,6 +170,8 @@ let data = [
         catagory : "World's largest Internet company.",
         rating:4.6+" "+"|",
         review:"3.7K+"+" "+"reviews",
+        type:"BPM",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/398058.gif"
     },
     {   
@@ -141,6 +180,8 @@ let data = [
         catagory : "IT services company since 1996.",
         rating:4.1+" "+"|",
         review:"3K+"+" "+"reviews",
+        type:"IT",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/1186200.gif"
     },
     {   
@@ -149,6 +190,8 @@ let data = [
         catagory : "Leading the #FinTech Revolution.",
         rating:3.8+" "+"|",
         review:"567"+" "+"reviews",
+        type:"IT",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/4582763.gif"
     },
     {   
@@ -157,6 +200,8 @@ let data = [
         catagory : "Information technology company.",
         rating:3.4+" "+"|",
         review:"6.2K+"+" "+"reviews",
+        type:"Technology",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/419316.gif"
     },
     {   
@@ -165,6 +210,8 @@ let data = [
         catagory : "Software development & technology services firm.",
         rating:4.4+" "+"|",
         review:"37K+"+" "+"reviews",
+        type:"IT",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/2436002.gif"
     },
     {   
@@ -173,6 +220,8 @@ let data = [
         catagory : "Cloud technology company since 1977.",
         rating:4.1+" "+"|",
         review:"30K+"+" "+"reviews",
+        type:"BPM",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/18850.gif"
     },
     {   
@@ -181,6 +230,8 @@ let data = [
         catagory : "Leading technology provider.",
         rating:3.7+" "+"|",
         review:"980"+" "+"reviews",
+        type:"BPM",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/4654342.gif"
     },
     {   
@@ -189,6 +240,8 @@ let data = [
         catagory : "Leader in financial services.",
         rating:3.9+" "+"|",
         review:"127K+"+" "+"reviews",
+        type:"Technology",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/240936.gif"
     },
     {   
@@ -197,6 +250,8 @@ let data = [
         catagory : "Global leader in next-gen digital services.",
         rating:4.3+" "+"|",
         review:"310K"+" "+"reviews",
+        type:"Technology",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/13832.gif"
     },
     {   
@@ -205,6 +260,8 @@ let data = [
        review:"3.7K+"+" "+"reviews",
         catagory : "Make the most out of Naukri by creating your job profile for free!",
         rating:4.0+" "+"|",
+        type:"BFSI",
+
         image : "https://static.naukimg.com/s/0/0/i/registerLock.png"
     },
     {   
@@ -213,6 +270,8 @@ let data = [
         catagory : "Leading business process management company.",
         rating:4.4+" "+"|",
         review:"90K+"+" "+"reviews",
+        type:"Technology",
+
         image : "https://img.naukimg.com/logo_images/groups/v2/4264.gif"
     },
     
@@ -225,19 +284,27 @@ let data = [
 console.log(data)
 
 
+//mouse hover
+
+
+
 let body = document.getElementById("append_div");
   function append(products) {
   body.innerHTML = null
 
-  products.forEach(function (el, id) {
+  products.forEach(function (el,id) {
 
     let parent = document.createElement('div');
     parent.classList.add("appparent")
+    
 
     let td1 = document.createElement('img');
     td1.classList.add("appimg")
 
     td1.src = el.image;
+
+    let type = document.createElement("span")
+    type.innerText=el.type
 
     let indiv = document.createElement('div');
     indiv.classList.add("appindiv")
@@ -285,3 +352,51 @@ let body = document.getElementById("append_div");
 }
 
 append(data)
+//filter part//=>///////////////////....................................
+
+const selectBtn1=document.querySelector(".select_btn")
+const selectBtn2=document.getElementById("sl2")
+const selectBtn3=document.getElementById("sl3")
+const selectBtn4=document.getElementById("sl4")
+const selectBtn5=document.getElementById("sl5")
+
+
+const items=document.querySelectorAll(".items");
+// console.log(selectBtn,items)
+selectBtn1.addEventListener("click", ()=>{
+    selectBtn1.classList.toggle("close")
+})
+selectBtn2.addEventListener("click", ()=>{
+    selectBtn2.classList.toggle("close")
+})
+selectBtn3.addEventListener("click", ()=>{
+    selectBtn3.classList.toggle("close")
+})
+selectBtn4.addEventListener("click", ()=>{
+    selectBtn4.classList.toggle("close")
+})
+selectBtn5.addEventListener("click", ()=>{
+    selectBtn5.classList.toggle("close")
+})
+items.forEach( items =>{
+    items.addEventListener("click",()=>{
+        items.classList.toggle("checked")
+    })
+})
+const ITsec = document.getElementById("IT");
+ITsec.addEventListener("click", function () {
+  append(filterdata);
+    
+        
+      })
+  let filterdata = data.filter(function(el,id){
+    return "IT"==el.type;
+
+});
+
+
+
+
+
+
+
