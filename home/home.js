@@ -213,3 +213,8 @@ function plusSlides3(n) {
       slides4[slideIndex4-1].style.display = "flex";
     }
   
+
+    import { footer, footerWorking } from "../components/footer.js"
+    let foot = document.querySelector("footer");
+    foot.innerHTML = footer();
+    footerWorking()

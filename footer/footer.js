@@ -1,3 +1,8 @@
+
+
+
+
+
 let footerSlide = document.getElementById("footerSlide");
 
 function carousel(){
