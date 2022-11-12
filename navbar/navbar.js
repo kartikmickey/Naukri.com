@@ -1,7 +1,12 @@
    
 
 
-   let  navbar=document.querySelector(".navbar")
+  
+  
+  
+  
+  
+  let  navbar=document.querySelector(".navbar")
    window.onscroll=function(){
    navbar.classList.add("sticky")
    // navbar.classList.("navscroll")
