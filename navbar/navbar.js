@@ -17,15 +17,15 @@
       myfirstclick()
 
    }
-   jobs.onclick=function(){
-     window.classList.add("body")
-   }
-   jobs.onmouseleave=function(){
+   // jobs.onclick=function(){
+   //   window.classList.add("body")
+   // }
+   // jobs.onmouseleave=function(){
      
-      inside.setAttribute("display","none")
-      // inside.innerHTML=null;
-      // myfirstclick()
-   }
+   //    inside.setAttribute("display","none")
+   //    // inside.innerHTML=null;
+   //    // myfirstclick()
+   // }
    // inside.innerHTML=null;
    // jobs.onclick=function(){
    //    myfirstclick()
