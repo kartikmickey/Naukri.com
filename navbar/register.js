@@ -26,3 +26,8 @@ let staticlist=document.querySelector(".static-list")
       
 
    }
+
+   let logo = document.getElementById("logo");
+   logo.onclick = ()=>{
+       window.location.href="../home/home.html"
+   }

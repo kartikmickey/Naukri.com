@@ -218,3 +218,11 @@ function plusSlides3(n) {
     let foot = document.querySelector("footer");
     foot.innerHTML = footer();
     footerWorking()
+
+    import { navbar, login, navbarWorking } from "../components/navbar.js"
+    let nav = document.getElementById("navbar");
+    // let nav = document.querySelector("body");
+    nav.innerHTML = navbar();
+    navbarWorking()
+    let log = document.getElementById("myForm");
+    log.innerHTML = login()
