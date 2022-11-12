@@ -7,13 +7,13 @@
 #topheading{
    /* height: 100px;  */
    width: 100%;
-   border: 1px solid black;
+   border: 0px solid black;
    text-align: center;
 }
 
 #container{
     width: 100%;
-    border: 1px solid red;
+    border: 0px solid red;
     /* height: 400px; */
     display: flex;
     justify-content: center;
@@ -21,23 +21,38 @@
 }
 #both_div_top{
     width: 85%;
-    border: 1px solid black;
+    border: 0px solid black;
     display: flex;
     justify-content: center;
 }
 #content{
     display: flex;
-    border: 1px solid green;
+    border: 0px solid green;
     width: 95%;
-    align-items: center;
+    /* align-items: center; */
 }
 #filter{
-    border: 1px solid blue;
+    border: 0px solid blue;
     width: 25%;
-    height: 90%;
+    display: flex;
+    flex-direction: column;
+    
 }
+#filtop{
+    display: flex;
+    align-items: center;
+
+}
+.fill{
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline;
+    border: 0px solid black;
+
+}
+
 #listing_div_first{
-    border: 2px solid rgb(197, 218, 12);
+    border: 0px solid rgb(197, 218, 12);
     width: 72%;
     /* height: 90%; */
     display: flex;
@@ -86,8 +101,15 @@
     border-radius: 16px 6px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     font-family: Inter;
+    /* border: 1px solid teal; */
 
 }
+
+.appparent:hover{
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
 
 .star_img{
     width: 10%;
@@ -105,8 +127,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(185, 211, 209, 0.6);
+    background-color: rgba(244, 251, 251, 0.6);
     border-radius: 16px 6px;
+    /* border: 1px solid green; */
 
     
 
@@ -116,6 +139,8 @@
 }
 .cata{
     color: #8292B4;
+    width: 86%;
+    font-size: small;
 
 }
 .rateindiv{
@@ -152,7 +177,7 @@
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    border: 0px solid green;
+    border: 1px solid green;
 }
 
 
@@ -167,23 +192,31 @@
 .firstdrop{
     position: relative;
     max-width: 95%;
-    height: 250px;
+    height: auto;
+    border: 0px solid red;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
     
 }
+
+     
 .select_btn{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
     background-color: white;
-    border: 1px solid red;
-    height: 20%;
+    border: 0px solid rgb(21, 150, 157);
+    border-radius: 5px;
+    height: 12%;
+    width: 80%;
+    
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
     
 }
 .btn_txt{
     font-size: 16px;
     font-weight: 800;
     color: #333;
-    /* color: skyblue; */
+    
     
 
 }
@@ -191,13 +224,17 @@
     position: relative;
     margin-top: 15px;
     background-color: white;
-    border: 1px solid red;
-    padding: 16px;
+    border: 0px solid red;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+    padding: 0px 0px 16px 0px;
     display:block;
+    width: 80%;
     
 }
-.close~.list_items{
-    display: none;
+.select_btn.close~.list_items{
+    display:none;
+    /* visibility: hidden; */
+    height: 0px;
 
 }
 .arrow_dwn{
@@ -207,7 +244,7 @@
     font-size: 15px;
     transition: 0.3s;
     border-radius: 50%;
-    background-color:#697798;
+    /* background-color:#697798; */
     justify-content: center;
     align-items: center;
 }
@@ -219,15 +256,19 @@
     display: flex;
     align-items:center;
     height: 30px;
+    border: 0px solid rgb(30, 33, 203);
+
+    width: 100%;
+    margin:5px auto;
 }
-.checkbox{
+.items .checkbox{
    
     height:14px;
     width: 14px;
     border-radius: 4px;
     margin-right: 12px;
     border: 1.5px solid #c0c0c0;
-    /* transition: all 0.3s ease-in-out; */
+    transition: all 0.3s ease-in-out;
 
 }
 .item_text{
@@ -236,13 +277,20 @@
     color: #8292B4;
 
 }
-.check-icon{
-    font-size: 11px;
+
+.checkbox .fa-check{
+    color:black;
+    font-size: 14px;
     transform: scale(0);
     transition: all 0.3s ease-in-out;
-}
-.items.checked.check-icon{
+  }
+  .items.checked .fa-check{
     transform: scale(1);
-
-}
-
+  }
+ 
+  /* .close{
+    display: ;
+  } */
+  
+  
+ 
