@@ -129,3 +129,92 @@ function plusSlides2(n) {
     slides2[slideIndex2-1].style.display = "grid";
     dots[slideIndex2-1].className += " active";
   }
+
+
+
+  let prev3 = document.querySelector(".prev3")
+prev3.onclick = ()=>{
+    plusSlides3(-1);
+    console.log("hello")
+}
+let next3 = document.querySelector(".next3");
+next3.onclick = ()=>{
+    plusSlides3(1);
+    console.log("hello")
+}
+
+let slideIndex3 = 1;
+showSlides3(slideIndex3);
+
+function plusSlides3(n) {
+    showSlides3(slideIndex3 += n);
+  };
+  function currentSlide3(n) {
+    showSlides3(slideIndex3 = n);
+  }
+
+  function showSlides3(n) {
+    let i;
+    let slides3 = document.getElementsByClassName("mySlides3");
+    next3.style.display = "block";
+    prev3.style.display = "block"
+    if (n == slides3.length) {
+        // slideIndex = 1
+        next3.style.display = "none";
+    }
+    if (n == 1) {
+        // slideIndex = slides.length;
+        prev3.style.display = "none";
+    }
+    for (i = 0; i < slides3.length; i++) {
+      slides3[i].style.display = "none";
+    }
+    slides3[slideIndex3-1].style.display = "block";
+  }
+
+
+  let prev4 = document.querySelector(".prev4")
+  prev4.onclick = ()=>{
+      plusSlides4(-1);
+      console.log("hello")
+  }
+  let next4 = document.querySelector(".next4");
+  next4.onclick = ()=>{
+      plusSlides4(1);
+      console.log("hello")
+  }
+  
+  let slideIndex4 = 1;
+  showSlides4(slideIndex4);
+  
+  function plusSlides4(n) {
+      showSlides4(slideIndex4 += n);
+    };
+    function currentSlide4(n) {
+      showSlides4(slideIndex4 = n);
+    }
+  
+    function showSlides4(n) {
+      let i;
+      let slides4 = document.getElementsByClassName("mySlides4");
+      next4.style.display = "block";
+      prev4.style.display = "block"
+      if (n == slides4.length) {
+          // slideIndex = 1
+          next4.style.display = "none";
+      }
+      if (n == 1) {
+          // slideIndex = slides.length;
+          prev4.style.display = "none";
+      }
+      for (i = 0; i < slides4.length; i++) {
+        slides4[i].style.display = "none";
+      }
+      slides4[slideIndex4-1].style.display = "flex";
+    }
+  
+
+    import { footer, footerWorking } from "../components/footer.js"
+    let foot = document.querySelector("footer");
+    foot.innerHTML = footer();
+    footerWorking()
