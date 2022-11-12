@@ -1,7 +1,12 @@
    
 
 
-   let  navbar=document.querySelector(".navbar")
+  
+  
+  
+  
+  
+  let  navbar=document.querySelector(".navbar")
    window.onscroll=function(){
    navbar.classList.add("sticky")
    // navbar.classList.("navscroll")
@@ -85,3 +90,27 @@
        register.onclick=function(){
          window.location.href="./register.html"
        }
+
+       let btn=document.querySelector(".loginButton").addEventListener("click",formfill)
+       let data=JSON.parse(localStorage.getItem("key"))||[]
+   function formfill(event){
+      console.log("jdkdlk")
+      event.preventDefault()
+      
+      let email=document.querySelector(".inp").value;
+      let password=document.querySelector(".inpp").value;
+      if(email==data.email&&password==data.pass){
+         alert("right")
+      }else{
+         alert("wrong")
+        document.querySelector(".inp").value=""
+        document.querySelector(".inpp").value=""
+      }
+
+     
+     
+     
+      
+
+   }
+
