@@ -226,3 +226,12 @@ function plusSlides3(n) {
     navbarWorking()
     let log = document.getElementById("myForm");
     log.innerHTML = login()
+    //  let logo = document.getElementById("logo");
+    // logo.onclick = ()=>{
+    //     window.location.href="../home/home.html"
+    // }
+
+    let type = document.getElementById("type");
+    type.onclick= ()=>{
+      window.location.href="../jobs/index.html"
+    }
