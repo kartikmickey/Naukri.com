@@ -2,6 +2,7 @@
 *{
     margin-left: 0px;
     margin-right: 0px;
+    
 }
 
 #topheading{
@@ -36,6 +37,9 @@
     width: 25%;
     display: flex;
     flex-direction: column;
+    position:sticky;
+    top: 0;
+    
     
 }
 #filtop{
@@ -57,7 +61,7 @@
     /* height: 90%; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 #listing_div_second{
     border: 0px solid rgb(215, 24, 183);
@@ -65,14 +69,17 @@
     /* height: 99%; */
     display: flex;
     flex-direction: column;
+    /* position: absolut; */
+
+    
 }
 #append_div{
    width: 98%;
-   border: 0px solid yellowgreen;
-   height: 100%;
+   border: 0px solid rgb(50, 205, 78);
+   height: auto;
    display: grid;
    grid-template-columns: repeat(4,1fr);
-   justify-content:space-evenly;
+   
 }
 #change_page{
     width: 98%;
@@ -101,7 +108,7 @@
     border-radius: 16px 6px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     font-family: Inter;
-    /* border: 1px solid teal; */
+    border: 0px solid teal;
 
 }
 

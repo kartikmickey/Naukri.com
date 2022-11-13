@@ -385,14 +385,52 @@ items.forEach( items =>{
 })
 const ITsec = document.getElementById("IT");
 ITsec.addEventListener("click", function () {
-  append(filterdata);
+  append(filterdata1);
     
         
       })
-  let filterdata = data.filter(function(el,id){
+  let filterdata1 = data.filter(function(el,id){
     return "IT"==el.type;
 
 });
+const BFSIsec = document.getElementById("BFSI");
+BFSIsec.addEventListener("click", function () {
+  append(filterdata2);
+    
+        
+      })
+  let filterdata2 = data.filter(function(el,id){
+    return "BFSI"==el.type;
+
+});
+
+const BPMsec = document.getElementById("BPM");
+BPMsec.addEventListener("click", function () {
+  append(filterdata3);
+    
+        
+      })
+  let filterdata3 = data.filter(function(el,id){
+    return "BPM"==el.type;
+
+});
+const TECHsec = document.getElementById("TECH");
+TECHsec.addEventListener("click", function () {
+  append(filterdata4);
+    
+        
+      })
+  let filterdata4 = data.filter(function(el,id){
+    return "Technology"==el.type;
+
+});
+
+
+
+// import { footer, footerWorking } from "../components/footer.js"
+//     let foot = document.querySelector("footer");
+//     foot.innerHTML = footer();
+//     footerWorking()
 
 
 
