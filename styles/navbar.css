@@ -9,7 +9,8 @@
     top: 0%;
      margin-top: 0%;
      margin-left: -10px;
-   
+     background-color: white;
+     z-index: 1;
     /* margin-right: -15px;  */
    
    
@@ -55,7 +56,7 @@
 
 }
 
-#last{
+#last1{
     /* border: 1px solid green; */
     color: #44464b;
     display: flex;
@@ -70,7 +71,7 @@
    
 
 }
-#last>div{
+#last1>div{
     display: flex;
     justify-content: center;
     text-align: center;

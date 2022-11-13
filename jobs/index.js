@@ -425,6 +425,7 @@ const customSort1 = (a, b) => {
     return 1;
   }
   return 0;
+  // console.log("ok")
 };
 
 const bangalore = document.getElementById("bangalore");
