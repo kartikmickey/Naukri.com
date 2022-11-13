@@ -1,7 +1,8 @@
 const navbar = ()=> {
     return`
-    <div class="logo"> 
+    <div class="logo"> <a href="../home/home.html">
         <img src="../components/Naukri FINAL2.png" alt="">
+        </a>
     </div>
     <div  id="mid">
      <div>
@@ -296,7 +297,10 @@ const navbarWorking = ()=> {
       
 
    }
-
+//  let logo = document.getElementById("logo");
+//     logo.onclick = ()=>{
+//         window.location.href="../home/home.html"
+//     }
 // showallthings()
 }
 

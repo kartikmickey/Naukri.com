@@ -131,8 +131,9 @@
    
   }
  
-.logo img{
-   height: 100%;
+.logo>a>img{
+   height: 80%;
+   margin-top: 10px;
     /* padding-top: 10px;
     padding-bottom: 1px; */
     width: 100%;
