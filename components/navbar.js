@@ -1,6 +1,6 @@
 const navbar = ()=> {
     return`
-    <div class="logo"> <a href="../home/home.html">
+    <div class="logo"> <a href="../home/index.html">
         <img src="../components/Naukri FINAL2.png" alt="">
         </a>
     </div>
