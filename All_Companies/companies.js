@@ -1,5 +1,16 @@
 console.log("connected");
+// import { footer, footerWorking } from "../components/footer.js"
+//     let foot = document.querySelector("footer");
+//     foot.innerHTML = footer();
+//     footerWorking()
 
+    import { navbar, login, navbarWorking } from "../components/navbar.js"
+    let nav = document.getElementById("navbar");
+    // let nav = document.querySelector("body");
+    nav.innerHTML = navbar();
+    navbarWorking()
+    let log = document.getElementById("myForm");
+    log.innerHTML = login()
 
 
 
@@ -315,7 +326,7 @@ let body = document.getElementById("append_div");
     let comp = document.createElement('span');
     comp.classList.add("comp")
        comp.innerHTML = el.company;
-       rateindiv = document.createElement("div")
+      let rateindiv = document.createElement("div")
        rateindiv.classList="rateindiv"
 
     let starimg=document.createElement("img");
@@ -436,6 +447,49 @@ TECHsec.addEventListener("click", function () {
 
 
 
+    //  let logo = document.getElementById("logo");
+    // logo.onclick = ()=>{
+    //     window.location.href="../home/home.html"
+    // }
 
 
+    let footerSlide = document.getElementById("footerSlide");
 
+    function carousel(){
+        let images = [
+            "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/nnacres.png",
+            "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jeevansathi.png",
+            "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/ng.png",
+            "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/firstNaukri.png",
+            "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png",
+            "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/iimjobs.png",
+            "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/hirist.png",
+            "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jobhai.png"
+        ]
+    
+        let imgE1 = document.createElement("img");
+        let imgE2 = document.createElement("img"); 
+        let imgE3 = document.createElement("img");
+         let imgE4 = document.createElement("img");
+    
+         imgE1.src = images[0];
+         imgE2.src = images[1];
+         imgE3.src = images[2];
+         imgE4.src = images[3];
+         footerSlide.append(imgE1, imgE2, imgE3, imgE4);
+         let i= 1;
+    
+         setInterval(function(){
+            if(i== 4){
+                i= 0;
+            }
+            imgE1.src = images[i];
+         imgE2.src = images[1+i];
+         imgE3.src = images[2+i];
+         imgE4.src = images[3+i];
+         footerSlide.append(imgE1, imgE2, imgE3, imgE4);
+         i++;
+         }, 2000)
+    
+    }
+    carousel()

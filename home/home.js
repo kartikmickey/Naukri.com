@@ -235,3 +235,16 @@ function plusSlides3(n) {
     type.onclick= ()=>{
       window.location.href="../jobs/index.html"
     }
+
+    let heading2 = document.getElementById("heading2")
+    heading2.onclick= ()=>{
+      // console.log("hello")
+      // window.location.href="../jobs/index.html"
+      window.location.href="../All_Companies/companies.html"
+    }
+    let heading3 = document.getElementById("heading3")
+    heading3.onclick= ()=>{
+      // console.log("hello")
+      // window.location.href="../jobs/index.html"
+      window.location.href="../All_Companies/companies.html"
+    }
