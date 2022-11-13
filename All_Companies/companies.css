@@ -184,7 +184,21 @@
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid green;
+    border: 0px solid green;
+    color: #8292b4;
+}
+.changebtn{
+    opacity: 0.5;
+    border-radius: 6px;
+    border: 0.9px;
+}
+#pagect{
+    width: 10%;
+    background-color: orange;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 

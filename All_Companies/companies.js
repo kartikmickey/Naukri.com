@@ -386,11 +386,11 @@ items.forEach( items =>{
 const ITsec = document.getElementById("IT");
 ITsec.addEventListener("click", function () {
   append(filterdata1);
+//   ITsec.setAttribute.toggle("id","IT1")
     
-        
       })
-  let filterdata1 = data.filter(function(el,id){
-    return "IT"==el.type;
+  let filterdata1 = data.filter(function(epl,id){
+    return "IT"==epl.type;
 
 });
 const BFSIsec = document.getElementById("BFSI");
@@ -399,8 +399,8 @@ BFSIsec.addEventListener("click", function () {
     
         
       })
-  let filterdata2 = data.filter(function(el,id){
-    return "BFSI"==el.type;
+  let filterdata2 = data.filter(function(any,id){
+    return "BFSI"==any.type;
 
 });
 
@@ -425,9 +425,10 @@ TECHsec.addEventListener("click", function () {
 
 });
 
-
+////footer part will be here
 
 // import { footer, footerWorking } from "../components/footer.js"
+// // ../components/footer.js
 //     let foot = document.querySelector("footer");
 //     foot.innerHTML = footer();
 //     footerWorking()
